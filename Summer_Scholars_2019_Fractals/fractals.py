@@ -106,9 +106,9 @@ def generate_two_branch_fractal_tree(alphabet, forbidden, size, theta, r):
     allowed_addresses = make_pruned_list(alphabet, size, forbidden)
     for i in range(len(allowed_addresses)):
         x1, x2, y1, y2 = draw_root_line(theta, r, allowed_addresses[i], alphabet)
-        plt.plot([x1, x2], [y1, y2])
+        plt.plot([x1, x2], [y1, y2], 'k')
         # plt.plot(x2, y2, "ro")
-    plt.plot([0, 0], [1, 0])
+    plt.plot([0, 0], [1, 0], 'k')
     plt.show()
 
 
@@ -128,10 +128,10 @@ def generate_two_branch_fractal_tips(alphabet, forbidden, size, theta, r):
 
 def main():
     alphabet = ['1', '2']
-    forbidden = 111
-    size = 11
+    forbidden = 112
+    size =11
     theta = math.pi / 2
-    r = .707
+    r = .7071
     generate_two_branch_fractal_tips(alphabet, forbidden, size, theta, r)
     generate_two_branch_fractal_tree(alphabet, forbidden, size, theta, r)
 

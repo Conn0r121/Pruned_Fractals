@@ -128,8 +128,8 @@ def generate_two_branch_fractal_tips(alphabet, forbidden, size, theta, r):
 
 def main():
     alphabet = ['1', '2']
-    forbidden = 112
-    size =11
+    forbidden = 121
+    size = 11
     theta = math.pi / 2
     r = .7071
     generate_two_branch_fractal_tips(alphabet, forbidden, size, theta, r)
